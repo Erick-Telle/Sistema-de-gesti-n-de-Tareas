@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerUI", "PlayerUI\PlayerUI.csproj", "{B265B459-B4B6-44BC-BDB1-B401C58DC48F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hwork", "PlayerUI\Hwork.csproj", "{B265B459-B4B6-44BC-BDB1-B401C58DC48F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

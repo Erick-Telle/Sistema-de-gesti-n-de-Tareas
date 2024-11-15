@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PlayerUI.Formularios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +21,7 @@ namespace PlayerUI
 
         private void hideSubMenu()
         {
-            panelMediaSubMenu.Visible = false;
+            panelSubMenu.Visible = false;
             panelPlaylistSubMenu.Visible = false;
             panelToolsSubMenu.Visible = false;
         }
@@ -38,7 +39,7 @@ namespace PlayerUI
 
         private void btnMedia_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelMediaSubMenu);
+            showSubMenu(panelSubMenu);
         }
 
         #region MediaSubMenu
@@ -84,6 +85,7 @@ namespace PlayerUI
         #region PlayListManagemetSubMenu
         private void button8_Click(object sender, EventArgs e)
         {
+            openChildForm(new Form4());
             //..
             //your codes
             //..
@@ -186,6 +188,12 @@ namespace PlayerUI
             panelChildForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void TimerFechaHora_Tick(object sender, EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToLongDateString();
+            lblHora.Text = DateTime.Now.ToString("hh: mm:ss");
         }
     }
 }
