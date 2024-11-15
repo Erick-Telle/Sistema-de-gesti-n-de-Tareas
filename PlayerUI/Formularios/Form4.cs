@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -15,52 +16,19 @@ namespace PlayerUI.Formularios
 {
     public partial class Form4 : Form
     {
-
+        
         public Form4()
         {
             InitializeComponent();
-            string rutaArchivo = @"C:\Users\User\Documents\Tareas.dat";  
-            List<eltTareas> tareas = LeerArchivoDat(rutaArchivo);
+            string rutaArchivo = @"C:\Users\User\Documents\Tareas.dat";
+            LeerDatos(rutaArchivo);
         }
-        public List<eltTareas> LeerArchivoDat(string rutaArchivo)
+        public void LeerDatos(string rutaArchivo)
         {
-            var tareas = new List<eltTareas>();
-
+            TareaArchivo archivo = new TareaArchivo();
             try
             {
-                using (FileStream archivo = new FileStream(rutaArchivo, FileMode.Open, FileAccess.Read))
-                {
-                    using (BinaryReader lector = new BinaryReader(archivo))
-                    {
-                        while (lector.BaseStream.Position < lector.BaseStream.Length)
-                        {
-                            // Leer el tamaño del título y luego el título
-                            int tamañoTitulo = lector.ReadInt32();
-                            char[] tituloArray = lector.ReadChars(tamañoTitulo);
-                            string titulo = new string(tituloArray);
-
-                            // Leer la descripción
-                            string descripcion = lector.ReadString();
-
-                            // Leer la fecha (como string en formato "yyyy-MM-dd")
-                            string fechaString = lector.ReadString();
-                            DateTime fechaEntrega = DateTime.ParseExact(fechaString, "yyyy-MM-dd", null);
-
-                            // Leer la prioridad
-                            string prioridad = lector.ReadString();
-
-                            // Crear un objeto Tarea y agregarlo a la lista
-                            eltTareas tarea = new eltTareas
-                            {
-                                TituloTarea = titulo,
-                                Descripcion = descripcion,
-                                FechaEntrega = fechaEntrega,
-                                Prioridad = prioridad
-                            };
-                            tareas.Add(tarea);
-                        }
-                    }
-                }
+                List<eltTareas> tareas = archivo.LeerArchivoDat(rutaArchivo);
 
                 tareas.Sort((x, y) => x.TituloTarea.CompareTo(y.TituloTarea));
                 dgvTareas.DataSource = null;
@@ -70,10 +38,8 @@ namespace PlayerUI.Formularios
             {
                 MessageBox.Show("Error al leer el archivo: " + ex.Message);
             }
-
-            return tareas;
         }
-
+       
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
