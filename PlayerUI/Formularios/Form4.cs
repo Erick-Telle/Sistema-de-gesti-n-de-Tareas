@@ -19,7 +19,7 @@ namespace PlayerUI.Formularios
         public Form4()
         {
             InitializeComponent();
-            string rutaArchivo = @"C:\Users\User\Documents\Tareas.dat";  // Cambia la ruta por la que desees
+            string rutaArchivo = @"C:\Users\User\Documents\Tareas.dat";  
             List<eltTareas> tareas = LeerArchivoDat(rutaArchivo);
         }
         public List<eltTareas> LeerArchivoDat(string rutaArchivo)
@@ -72,6 +72,11 @@ namespace PlayerUI.Formularios
             }
 
             return tareas;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

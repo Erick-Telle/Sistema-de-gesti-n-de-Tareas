@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dgvTareas = new System.Windows.Forms.DataGridView();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,12 +58,28 @@
             this.dgvTareas.Size = new System.Drawing.Size(564, 260);
             this.dgvTareas.TabIndex = 3;
             // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.LightGray;
+            this.button5.Location = new System.Drawing.Point(-1, -1);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(25, 25);
+            this.button5.TabIndex = 8;
+            this.button5.Text = "X";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(668, 392);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.dgvTareas);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -78,5 +95,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvTareas;
+        private System.Windows.Forms.Button button5;
     }
 }

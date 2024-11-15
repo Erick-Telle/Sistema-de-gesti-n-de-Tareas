@@ -23,7 +23,6 @@ namespace PlayerUI
         {
             panelSubMenu.Visible = false;
             panelPlaylistSubMenu.Visible = false;
-            panelToolsSubMenu.Visible = false;
         }
 
         private void showSubMenu(Panel subMenu)
@@ -46,33 +45,21 @@ namespace PlayerUI
         private void button2_Click(object sender, EventArgs e)
         {
             openChildForm(new Form2());
-            //..
-            //your codes
-            //..
             hideSubMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //..
-            //your codes
-            //..
             hideSubMenu();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //..
-            //your codes
-            //..
             hideSubMenu();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //..
-            //your codes
-            //..
             hideSubMenu();
         }
         #endregion
@@ -86,40 +73,28 @@ namespace PlayerUI
         private void button8_Click(object sender, EventArgs e)
         {
             openChildForm(new Form4());
-            //..
-            //your codes
-            //..
             hideSubMenu();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            //..
-            //your codes
-            //..
             hideSubMenu();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            //..
-            //your codes
-            //..
             hideSubMenu();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //..
-            //your codes
-            //..
             hideSubMenu();
         }
         #endregion
 
         private void btnTools_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelToolsSubMenu);
+            
         }
         #region ToolsSubMenu
         private void button13_Click(object sender, EventArgs e)
@@ -155,20 +130,8 @@ namespace PlayerUI
         }
         #endregion
 
-        private void btnEqualizer_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Form3());
-            //..
-            //your codes
-            //..
-            hideSubMenu();
-        }
-
         private void btnHelp_Click(object sender, EventArgs e)
         {
-            //..
-            //your codes
-            //..
             hideSubMenu();
         }
         private void btnExit_Click(object sender, EventArgs e)
@@ -194,6 +157,11 @@ namespace PlayerUI
         {
             lblFecha.Text = DateTime.Now.ToLongDateString();
             lblHora.Text = DateTime.Now.ToString("hh: mm:ss");
+        }
+
+        private void btnHistorial_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
         }
     }
 }

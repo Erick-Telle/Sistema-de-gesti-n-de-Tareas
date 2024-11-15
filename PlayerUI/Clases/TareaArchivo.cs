@@ -12,7 +12,7 @@ namespace PlayerUI.Clases
         public void GuardarArchivo(List<eltTareas> tareas, string rutaArchivo)
         {
 
-            using (FileStream archivo = new FileStream(rutaArchivo, FileMode.Create, FileAccess.Write))
+            using (FileStream archivo = new FileStream(rutaArchivo, FileMode.Append, FileAccess.Write))
             {
                 using (BinaryWriter escritor = new BinaryWriter(archivo))
                 {
@@ -28,5 +28,6 @@ namespace PlayerUI.Clases
             }
 
         }
+
     }
 }

@@ -33,11 +33,6 @@
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
-            this.panelToolsSubMenu = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.btnTools = new System.Windows.Forms.Button();
             this.btnHistorial = new System.Windows.Forms.Button();
             this.panelPlaylistSubMenu = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
@@ -58,7 +53,6 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.TimerFechaHora = new System.Windows.Forms.Timer(this.components);
             this.panelSideMenu.SuspendLayout();
-            this.panelToolsSubMenu.SuspendLayout();
             this.panelPlaylistSubMenu.SuspendLayout();
             this.panelSubMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -74,8 +68,6 @@
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panelSideMenu.Controls.Add(this.btnExit);
             this.panelSideMenu.Controls.Add(this.btnHelp);
-            this.panelSideMenu.Controls.Add(this.panelToolsSubMenu);
-            this.panelSideMenu.Controls.Add(this.btnTools);
             this.panelSideMenu.Controls.Add(this.btnHistorial);
             this.panelSideMenu.Controls.Add(this.panelPlaylistSubMenu);
             this.panelSideMenu.Controls.Add(this.btnPlaylist);
@@ -98,10 +90,10 @@
             this.btnExit.ForeColor = System.Drawing.Color.Silver;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 606);
+            this.btnExit.Location = new System.Drawing.Point(0, 516);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(233, 45);
+            this.btnExit.Size = new System.Drawing.Size(250, 45);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "  Exit";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -119,103 +111,16 @@
             this.btnHelp.ForeColor = System.Drawing.Color.Silver;
             this.btnHelp.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.Image")));
             this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.Location = new System.Drawing.Point(0, 561);
+            this.btnHelp.Location = new System.Drawing.Point(0, 386);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnHelp.Size = new System.Drawing.Size(233, 45);
+            this.btnHelp.Size = new System.Drawing.Size(250, 45);
             this.btnHelp.TabIndex = 8;
             this.btnHelp.Text = "  Help";
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
-            // 
-            // panelToolsSubMenu
-            // 
-            this.panelToolsSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelToolsSubMenu.Controls.Add(this.button10);
-            this.panelToolsSubMenu.Controls.Add(this.button12);
-            this.panelToolsSubMenu.Controls.Add(this.button13);
-            this.panelToolsSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelToolsSubMenu.Location = new System.Drawing.Point(0, 431);
-            this.panelToolsSubMenu.Name = "panelToolsSubMenu";
-            this.panelToolsSubMenu.Size = new System.Drawing.Size(233, 130);
-            this.panelToolsSubMenu.TabIndex = 7;
-            // 
-            // button10
-            // 
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ForeColor = System.Drawing.Color.Silver;
-            this.button10.Location = new System.Drawing.Point(0, 80);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(233, 40);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "Preferences";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button12
-            // 
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.ForeColor = System.Drawing.Color.Silver;
-            this.button12.Location = new System.Drawing.Point(0, 40);
-            this.button12.Name = "button12";
-            this.button12.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(233, 40);
-            this.button12.TabIndex = 1;
-            this.button12.Text = "Effects and filters";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button13
-            // 
-            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.ForeColor = System.Drawing.Color.Silver;
-            this.button13.Location = new System.Drawing.Point(0, 0);
-            this.button13.Name = "button13";
-            this.button13.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button13.Size = new System.Drawing.Size(233, 40);
-            this.button13.TabIndex = 0;
-            this.button13.Text = "Media converter";
-            this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // btnTools
-            // 
-            this.btnTools.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTools.FlatAppearance.BorderSize = 0;
-            this.btnTools.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.btnTools.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.btnTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTools.ForeColor = System.Drawing.Color.Silver;
-            this.btnTools.Image = ((System.Drawing.Image)(resources.GetObject("btnTools.Image")));
-            this.btnTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTools.Location = new System.Drawing.Point(0, 386);
-            this.btnTools.Name = "btnTools";
-            this.btnTools.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnTools.Size = new System.Drawing.Size(233, 45);
-            this.btnTools.TabIndex = 6;
-            this.btnTools.Text = "  Tools";
-            this.btnTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTools.UseVisualStyleBackColor = true;
-            this.btnTools.Click += new System.EventHandler(this.btnTools_Click);
             // 
             // btnHistorial
             // 
@@ -230,13 +135,13 @@
             this.btnHistorial.Location = new System.Drawing.Point(0, 341);
             this.btnHistorial.Name = "btnHistorial";
             this.btnHistorial.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnHistorial.Size = new System.Drawing.Size(233, 45);
+            this.btnHistorial.Size = new System.Drawing.Size(250, 45);
             this.btnHistorial.TabIndex = 5;
             this.btnHistorial.Text = "  Historial";
             this.btnHistorial.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHistorial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHistorial.UseVisualStyleBackColor = true;
-            this.btnHistorial.Click += new System.EventHandler(this.btnEqualizer_Click);
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
             // panelPlaylistSubMenu
             // 
@@ -245,7 +150,7 @@
             this.panelPlaylistSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPlaylistSubMenu.Location = new System.Drawing.Point(0, 302);
             this.panelPlaylistSubMenu.Name = "panelPlaylistSubMenu";
-            this.panelPlaylistSubMenu.Size = new System.Drawing.Size(233, 39);
+            this.panelPlaylistSubMenu.Size = new System.Drawing.Size(250, 39);
             this.panelPlaylistSubMenu.TabIndex = 4;
             // 
             // button8
@@ -259,7 +164,7 @@
             this.button8.Location = new System.Drawing.Point(0, 0);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(233, 40);
+            this.button8.Size = new System.Drawing.Size(250, 40);
             this.button8.TabIndex = 0;
             this.button8.Text = "Tareas Pendientes";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -279,7 +184,7 @@
             this.btnPlaylist.Location = new System.Drawing.Point(0, 257);
             this.btnPlaylist.Name = "btnPlaylist";
             this.btnPlaylist.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnPlaylist.Size = new System.Drawing.Size(233, 45);
+            this.btnPlaylist.Size = new System.Drawing.Size(250, 45);
             this.btnPlaylist.TabIndex = 3;
             this.btnPlaylist.Text = " Visualizar Tareas";
             this.btnPlaylist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -296,7 +201,7 @@
             this.panelSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSubMenu.Location = new System.Drawing.Point(0, 137);
             this.panelSubMenu.Name = "panelSubMenu";
-            this.panelSubMenu.Size = new System.Drawing.Size(233, 120);
+            this.panelSubMenu.Size = new System.Drawing.Size(250, 120);
             this.panelSubMenu.TabIndex = 2;
             // 
             // button4
@@ -310,7 +215,7 @@
             this.button4.Location = new System.Drawing.Point(0, 80);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(233, 40);
+            this.button4.Size = new System.Drawing.Size(250, 40);
             this.button4.TabIndex = 2;
             this.button4.Text = "Eliminar Tareas";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -328,7 +233,7 @@
             this.button3.Location = new System.Drawing.Point(0, 40);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(233, 40);
+            this.button3.Size = new System.Drawing.Size(250, 40);
             this.button3.TabIndex = 1;
             this.button3.Text = "Editar Tareas";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -346,7 +251,7 @@
             this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(233, 40);
+            this.button2.Size = new System.Drawing.Size(250, 40);
             this.button2.TabIndex = 0;
             this.button2.Text = "Crear Tareas";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -366,7 +271,7 @@
             this.btnMedia.Location = new System.Drawing.Point(0, 92);
             this.btnMedia.Name = "btnMedia";
             this.btnMedia.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnMedia.Size = new System.Drawing.Size(233, 45);
+            this.btnMedia.Size = new System.Drawing.Size(250, 45);
             this.btnMedia.TabIndex = 1;
             this.btnMedia.Text = " Gestion de Tareas";
             this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -380,7 +285,7 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(233, 92);
+            this.panelLogo.Size = new System.Drawing.Size(250, 92);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBox1
@@ -495,7 +400,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
             this.panelSideMenu.ResumeLayout(false);
-            this.panelToolsSubMenu.ResumeLayout(false);
             this.panelPlaylistSubMenu.ResumeLayout(false);
             this.panelSubMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
@@ -517,11 +421,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnMedia;
         private System.Windows.Forms.Button btnHelp;
-        private System.Windows.Forms.Panel panelToolsSubMenu;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button btnTools;
         private System.Windows.Forms.Button btnHistorial;
         private System.Windows.Forms.Panel panelPlaylistSubMenu;
         private System.Windows.Forms.Button button8;

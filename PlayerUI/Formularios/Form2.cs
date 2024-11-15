@@ -39,17 +39,17 @@ namespace PlayerUI
 
             try
             {
-                // Ruta de guardado predeterminada en el escritorio del usuario
+                // Ruta de guardado predeterminada los documentos del usuario
                 string rutaArchivo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Tareas.dat");
 
-                // Instancia de la clase CiudadArchivoServicio para guardar
+                // Instancia de la clase para guardar
                 TareaArchivo archivo = new TareaArchivo();
 
                 // Guardar el archivo en la ubicación predeterminada
                 archivo.GuardarArchivo(tareas, rutaArchivo);
 
                 // Confirmación de guardado exitoso
-                MessageBox.Show("El archivo se ha guardado en el escritorio como 'Ciudades.dat'", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("La tarea ha sido creada exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -57,6 +57,11 @@ namespace PlayerUI
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
