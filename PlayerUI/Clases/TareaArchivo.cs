@@ -12,7 +12,6 @@ namespace PlayerUI.Clases
     {
         public void GuardarArchivo(List<eltTareas> tareas, string rutaArchivo)
         {
-
             using (FileStream archivo = new FileStream(rutaArchivo, FileMode.Append, FileAccess.Write))
             {
                 using (BinaryWriter escritor = new BinaryWriter(archivo))
@@ -27,7 +26,6 @@ namespace PlayerUI.Clases
                     }
                 }
             }
-
         }
 
         public List<eltTareas> LeerArchivoDat(string rutaArchivo)
@@ -76,6 +74,28 @@ namespace PlayerUI.Clases
             }
 
             return tareas;
+        }
+        public void EditarTarea(string rutaArchivo, string tituloTarea, string nuevaDescripcion, DateTime nuevaFechaEntrega, string nuevaPrioridad)
+        {
+            List<eltTareas> tareas = LeerArchivoDat(rutaArchivo);
+            
+            // Paso 2: Buscar la tarea deseada
+            eltTareas tarea = tareas.FirstOrDefault(t => t.TituloTarea == tituloTarea);
+
+            if (!EqualityComparer<eltTareas>.Default.Equals(tarea, default(eltTareas)))
+            {
+                // Modificar las propiedades de la tarea encontrada
+                tarea.Descripcion = nuevaDescripcion;
+                tarea.FechaEntrega = nuevaFechaEntrega;
+                tarea.Prioridad = nuevaPrioridad;
+            }
+            else
+            {
+                MessageBox.Show("No se encontró la tarea con el título especificado.","",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            // Paso 3: Guardar las tareas modificadas nuevamente en el archivo
+            GuardarArchivo(tareas, rutaArchivo);
         }
     }
 }

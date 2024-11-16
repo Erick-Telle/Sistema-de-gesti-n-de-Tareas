@@ -48,7 +48,6 @@ namespace PlayerUI
             }
             try
             {
-
                 // Ruta de guardado predeterminada los documentos del usuario
                 string rutaArchivo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Tareas.dat");
 
@@ -65,14 +64,15 @@ namespace PlayerUI
                     // Confirmación de guardado exitoso
                     MessageBox.Show("La tarea ha sido creada exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-
+                tbTitulo.Clear();
+                tbDescripcion.Clear();
+                tbTitulo.Focus();
             }
             catch (Exception ex)
             {
                 // Mostrar mensaje de error en caso de excepción
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
