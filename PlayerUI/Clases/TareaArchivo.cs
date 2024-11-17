@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,6 +14,24 @@ namespace PlayerUI.Clases
         public void GuardarArchivo(List<eltTareas> tareas, string rutaArchivo)
         {
             using (FileStream archivo = new FileStream(rutaArchivo, FileMode.Append, FileAccess.Write))
+            {
+                using (BinaryWriter escritor = new BinaryWriter(archivo))
+                {
+                    foreach (eltTareas c in tareas)
+                    {
+                        escritor.Write(c.TituloTarea.Length);
+                        escritor.Write(c.TituloTarea.ToCharArray());
+                        escritor.Write(c.Descripcion);
+                        escritor.Write(c.FechaEntrega.ToString("yyyy-MM-dd"));
+                        escritor.Write(c.Prioridad);
+                    }
+                }
+            }
+        }
+
+        public void GuardarArchivoEdit(List<eltTareas> tareas, string rutaArchivo)
+        {
+            using (FileStream archivo = new FileStream(rutaArchivo, FileMode.Create, FileAccess.Write))
             {
                 using (BinaryWriter escritor = new BinaryWriter(archivo))
                 {
@@ -75,19 +94,27 @@ namespace PlayerUI.Clases
 
             return tareas;
         }
+
         public void EditarTarea(string rutaArchivo, string tituloTarea, string nuevaDescripcion, DateTime nuevaFechaEntrega, string nuevaPrioridad)
         {
             List<eltTareas> tareas = LeerArchivoDat(rutaArchivo);
-            
-            // Paso 2: Buscar la tarea deseada
-            eltTareas tarea = tareas.FirstOrDefault(t => t.TituloTarea == tituloTarea);
 
-            if (!EqualityComparer<eltTareas>.Default.Equals(tarea, default(eltTareas)))
+            // Paso 2: Buscar la tarea deseada
+            // Se Usa LINQ y asignación condicional
+            int indice = tareas.FindIndex(t => t.TituloTarea == tituloTarea);
+
+            if (indice != -1)
             {
-                // Modificar las propiedades de la tarea encontrada
-                tarea.Descripcion = nuevaDescripcion;
-                tarea.FechaEntrega = nuevaFechaEntrega;
-                tarea.Prioridad = nuevaPrioridad;
+                // Modificar el elemento directamente en la lista
+                eltTareas tareaModificada = tareas[indice];
+                tareaModificada.Descripcion = nuevaDescripcion;
+                tareaModificada.FechaEntrega = nuevaFechaEntrega;
+                tareaModificada.Prioridad = nuevaPrioridad;
+
+                // Asignar la tarea modificada nuevamente a la lista
+                tareas[indice] = tareaModificada;
+
+                MessageBox.Show("La tarea a editada exitosamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -95,7 +122,35 @@ namespace PlayerUI.Clases
             }
 
             // Paso 3: Guardar las tareas modificadas nuevamente en el archivo
-            GuardarArchivo(tareas, rutaArchivo);
+            GuardarArchivoEdit(tareas, rutaArchivo);
         }
+
+        public void SeleccionarTarea(string rutaArchivo, string tituloTarea, string nuevaDescripcion, DateTime nuevaFechaEntrega, string nuevaPrioridad)
+        {
+            List<eltTareas> tareas = LeerArchivoDat(rutaArchivo);
+
+            // Paso 2: Buscar la tarea deseada
+            // Se Usa LINQ y asignación condicional
+            int indice = tareas.FindIndex(t => t.TituloTarea == tituloTarea);
+
+            if (indice != -1)
+            {
+                // Modificar el elemento directamente en la lista
+                eltTareas tareaModificada = tareas[indice];
+                tareaModificada.Descripcion = nuevaDescripcion;
+                tareaModificada.FechaEntrega = nuevaFechaEntrega;
+                tareaModificada.Prioridad = nuevaPrioridad;
+
+                // Asignar la tarea modificada nuevamente a la lista
+                tareas[indice] = tareaModificada;
+
+                MessageBox.Show("La tarea a editada exitosamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se encontró la tarea con el título especificado.","",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        
     }
 }
