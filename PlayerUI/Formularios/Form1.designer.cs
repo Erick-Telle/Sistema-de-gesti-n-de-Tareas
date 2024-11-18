@@ -34,7 +34,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.btnHistorial = new System.Windows.Forms.Button();
-            this.panelPlaylistSubMenu = new System.Windows.Forms.Panel();
+            this.panelVisualizarSubMenu = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.btnPlaylist = new System.Windows.Forms.Button();
             this.panelSubMenu = new System.Windows.Forms.Panel();
@@ -53,7 +53,7 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.TimerFechaHora = new System.Windows.Forms.Timer(this.components);
             this.panelSideMenu.SuspendLayout();
-            this.panelPlaylistSubMenu.SuspendLayout();
+            this.panelVisualizarSubMenu.SuspendLayout();
             this.panelSubMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,7 +69,7 @@
             this.panelSideMenu.Controls.Add(this.btnExit);
             this.panelSideMenu.Controls.Add(this.btnHelp);
             this.panelSideMenu.Controls.Add(this.btnHistorial);
-            this.panelSideMenu.Controls.Add(this.panelPlaylistSubMenu);
+            this.panelSideMenu.Controls.Add(this.panelVisualizarSubMenu);
             this.panelSideMenu.Controls.Add(this.btnPlaylist);
             this.panelSideMenu.Controls.Add(this.panelSubMenu);
             this.panelSideMenu.Controls.Add(this.btnMedia);
@@ -143,15 +143,15 @@
             this.btnHistorial.UseVisualStyleBackColor = true;
             this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
-            // panelPlaylistSubMenu
+            // panelVisualizarSubMenu
             // 
-            this.panelPlaylistSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelPlaylistSubMenu.Controls.Add(this.button8);
-            this.panelPlaylistSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelPlaylistSubMenu.Location = new System.Drawing.Point(0, 302);
-            this.panelPlaylistSubMenu.Name = "panelPlaylistSubMenu";
-            this.panelPlaylistSubMenu.Size = new System.Drawing.Size(250, 39);
-            this.panelPlaylistSubMenu.TabIndex = 4;
+            this.panelVisualizarSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelVisualizarSubMenu.Controls.Add(this.button8);
+            this.panelVisualizarSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelVisualizarSubMenu.Location = new System.Drawing.Point(0, 302);
+            this.panelVisualizarSubMenu.Name = "panelVisualizarSubMenu";
+            this.panelVisualizarSubMenu.Size = new System.Drawing.Size(250, 39);
+            this.panelVisualizarSubMenu.TabIndex = 4;
             // 
             // button8
             // 
@@ -164,7 +164,7 @@
             this.button8.Location = new System.Drawing.Point(0, 0);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(250, 40);
+            this.button8.Size = new System.Drawing.Size(250, 33);
             this.button8.TabIndex = 0;
             this.button8.Text = "Tareas Pendientes";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -400,7 +400,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
             this.panelSideMenu.ResumeLayout(false);
-            this.panelPlaylistSubMenu.ResumeLayout(false);
+            this.panelVisualizarSubMenu.ResumeLayout(false);
             this.panelSubMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -422,7 +422,7 @@
         private System.Windows.Forms.Button btnMedia;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.Button btnHistorial;
-        private System.Windows.Forms.Panel panelPlaylistSubMenu;
+        private System.Windows.Forms.Panel panelVisualizarSubMenu;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button btnPlaylist;
         private System.Windows.Forms.Panel panelLogo;

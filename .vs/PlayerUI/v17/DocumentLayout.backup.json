@@ -3,32 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|c:\\users\\user\\documents\\metodologia de la programacion estructurada\\2sistema de gestion de tareas\\sistema de gestion tareas\\playerui\\formularios\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|solutionrelative:playerui\\formularios\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\playerui\\formularios\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|solutionrelative:playerui\\formularios\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|c:\\users\\user\\documents\\metodologia de la programacion estructurada\\2sistema de gestion de tareas\\sistema de gestion tareas\\playerui\\formularios\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|solutionrelative:playerui\\formularios\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|c:\\users\\user\\documents\\metodologia de la programacion estructurada\\2sistema de gestion de tareas\\sistema de gestion tareas\\playerui\\clases\\tareaarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|solutionrelative:playerui\\clases\\tareaarchivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\playerui\\formularios\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|solutionrelative:playerui\\formularios\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|c:\\users\\user\\documents\\metodologia de la programacion estructurada\\2sistema de gestion de tareas\\sistema de gestion tareas\\playerui\\clases\\elttareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|solutionrelative:playerui\\clases\\elttareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\playerui\\formularios\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|solutionrelative:playerui\\formularios\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|c:\\users\\user\\documents\\metodologia de la programacion estructurada\\2sistema de gestion de tareas\\sistema de gestion tareas\\playerui\\formularios\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|solutionrelative:playerui\\formularios\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\playerui\\formularios\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\Hwork.csproj|solutionrelative:playerui\\formularios\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Formularios\\Form1.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Formularios\\Form1.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Formularios\\Form1.cs",
+              "RelativeToolTip": "PlayerUI\\Formularios\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:33:24.565Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -50,84 +51,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Formularios\\Form2.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Formularios\\Form2.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Formularios\\Form2.cs",
-              "RelativeToolTip": "PlayerUI\\Formularios\\Form2.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAACQAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T06:37:48.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "eltTareas.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Clases\\eltTareas.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Clases\\eltTareas.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Clases\\eltTareas.cs",
-              "RelativeToolTip": "PlayerUI\\Clases\\eltTareas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T06:35:53.618Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form4.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Formularios\\Form4.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Formularios\\Form4.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Formularios\\Form4.cs",
-              "RelativeToolTip": "PlayerUI\\Formularios\\Form4.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA1wBoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T04:33:13.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form3.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Formularios\\Form3.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Formularios\\Form3.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Formularios\\Form3.cs*",
-              "RelativeToolTip": "PlayerUI\\Formularios\\Form3.cs*",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAcwGUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T04:46:33.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form3.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Formularios\\Form3.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Formularios\\Form3.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Formularios\\Form3.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "PlayerUI\\Formularios\\Form3.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Formularios\\Form3.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Formularios\\Form3.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T04:22:57.215Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "TareaArchivo.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Clases\\TareaArchivo.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Clases\\TareaArchivo.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Clases\\TareaArchivo.cs",
               "RelativeToolTip": "PlayerUI\\Clases\\TareaArchivo.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAqwJAAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAcwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T02:52:07.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Metodologia de la programacion estructurada\\2Sistema de gestion de Tareas\\Sistema de gestion tareas\\PlayerUI\\Formularios\\Form1.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Formularios\\Form1.cs",

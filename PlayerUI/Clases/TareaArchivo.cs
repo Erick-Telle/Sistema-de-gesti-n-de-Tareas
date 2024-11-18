@@ -64,14 +64,12 @@ namespace PlayerUI.Clases
                             char[] tituloArray = lector.ReadChars(tamañoTitulo);
                             string titulo = new string(tituloArray);
 
-                            // Leer la descripción
                             string descripcion = lector.ReadString();
 
                             // Leer la fecha (como string en formato "yyyy-MM-dd")
                             string fechaString = lector.ReadString();
                             DateTime fechaEntrega = DateTime.ParseExact(fechaString, "yyyy-MM-dd", null);
 
-                            // Leer la prioridad
                             string prioridad = lector.ReadString();
 
                             // Crear un objeto Tarea y agregarlo a la lista
