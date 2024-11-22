@@ -93,7 +93,7 @@ namespace PlayerUI.Clases
             return tareas;
         }
 
-        public void EditarTarea(string rutaArchivo, string tituloTarea, string nuevaDescripcion, DateTime nuevaFechaEntrega, string nuevaPrioridad)
+        public void EditarTarea(string rutaArchivo, string tituloTarea,string NuevoTitulo, string nuevaDescripcion, DateTime nuevaFechaEntrega, string nuevaPrioridad)
         {
             List<eltTareas> tareas = LeerArchivoDat(rutaArchivo);
 
@@ -105,6 +105,7 @@ namespace PlayerUI.Clases
             {
                 // Modificar el elemento directamente en la lista
                 eltTareas tareaModificada = tareas[indice];
+                tareaModificada.TituloTarea = NuevoTitulo;
                 tareaModificada.Descripcion = nuevaDescripcion;
                 tareaModificada.FechaEntrega = nuevaFechaEntrega;
                 tareaModificada.Prioridad = nuevaPrioridad;

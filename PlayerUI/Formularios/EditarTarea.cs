@@ -17,25 +17,6 @@ namespace PlayerUI
         public EditarTarea()
         {
             InitializeComponent();
-            string rutaArchivo = @"C:\Users\User\Documents\Tareas.dat";
-            LeerDatos(rutaArchivo);
-        }
-
-        public void LeerDatos(string rutaArchivo)
-        {
-            TareaArchivo archivo = new TareaArchivo();
-            try
-            {
-                List<eltTareas> tareas = archivo.LeerArchivoDat(rutaArchivo);
-
-                tareas.Sort((x, y) => x.TituloTarea.CompareTo(y.TituloTarea));
-                dataGridView1.DataSource = null;
-                dataGridView1.DataSource = tareas;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al leer el archivo: " + ex.Message);
-            }
         }
 
         public void EditarDatos()
@@ -43,12 +24,13 @@ namespace PlayerUI
             string rutaArchivo = @"C:\Users\User\Documents\Tareas.dat";
             TareaArchivo tareaEdit = new TareaArchivo();
 
-            string Titulo = tbTitulo.Text;
+            string Titulo = comboBoxTarea.Text;
+            string NuevoTitulo = tbTitulo.Text;
             string NuevaDescripcion = tbDescripcion.Text;
             DateTime NuevaFecha = DateTime.Parse(dtpFecha.Text);
             string NuevaPrioridad = LbPrioridad.Text;
 
-            tareaEdit.EditarTarea(rutaArchivo, Titulo, NuevaDescripcion, NuevaFecha, NuevaPrioridad);
+            tareaEdit.EditarTarea(rutaArchivo, Titulo,NuevoTitulo, NuevaDescripcion, NuevaFecha, NuevaPrioridad);
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -56,44 +38,45 @@ namespace PlayerUI
             this.Close();
         }
 
-        private void btnSeleccionar_Click(object sender, EventArgs e)
-        {
-            string tituloBusqueda = tbTitulo.Text;
-
-            // Verificar que el título no esté vacío
-            if (string.IsNullOrEmpty(tituloBusqueda))
-            {
-                MessageBox.Show("Por favor ingrese un título válido para buscar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            // Buscar la fila que contiene el título en el DataGridView
-            bool tareaEncontrada = false;
-
-            foreach (DataGridViewRow fila in dataGridView1.Rows)
-            {
-                if (fila.Cells["TituloTarea"].Value != null && fila.Cells["TituloTarea"].Value.ToString() == tituloBusqueda)
-                {
-                    tbDescripcion.Text = fila.Cells["Descripcion"].Value.ToString();
-                    dtpFecha.Value = Convert.ToDateTime(fila.Cells["FechaEntrega"].Value); 
-                    LbPrioridad.Text = fila.Cells["Prioridad"].Value.ToString();
-
-                    tareaEncontrada = true;
-                    break;
-                }
-            }
-
-            // Si no se encontró la tarea
-            if (!tareaEncontrada)
-            {
-                MessageBox.Show("No se encontró una tarea con ese título.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void btnGuardarEdit_Click(object sender, EventArgs e)
         {
             EditarDatos();
+        }
 
+        private void EditarTarea_Load(object sender, EventArgs e)
+        {
+            string rutaArchivo = @"C:\Users\User\Documents\Tareas.dat";
+            TareaArchivo tareaArchivo = new TareaArchivo();
+            List<eltTareas> tareas = tareaArchivo.LeerArchivoDat(rutaArchivo);
+
+            // Mostrar los títulos en el ComboBox
+            foreach (var tarea in tareas)
+            {
+                comboBoxTarea.Items.Add(tarea.TituloTarea);
+            }
+
+            foreach (var tarea in tareas)
+            {
+                listBox1.Items.Add(tarea.TituloTarea);
+            }
+        }
+
+        private void comboBoxTarea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string tituloSeleccionado = comboBoxTarea.SelectedItem.ToString();
+            string rutaArchivo = @"C:\Users\User\Documents\Tareas.dat";
+
+            TareaArchivo tareaArchivo = new TareaArchivo();
+            List<eltTareas> tareas = tareaArchivo.LeerArchivoDat(rutaArchivo);
+            var tarea = tareas.FirstOrDefault(t => t.TituloTarea == tituloSeleccionado);
+
+            if (!Object.ReferenceEquals(tarea, null))
+            {
+                tbTitulo.Text = tarea.TituloTarea;
+                tbDescripcion.Text = tarea.Descripcion;
+                dtpFecha.Value = tarea.FechaEntrega;
+                LbPrioridad.Text = tarea.Prioridad;
+            }
         }
     }
 }
