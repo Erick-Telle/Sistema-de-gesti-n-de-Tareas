@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI
 {
-    partial class Form1
+    partial class MenuPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
@@ -47,7 +47,7 @@
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panelPlayer = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbContador = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
@@ -164,7 +164,7 @@
             this.button8.Location = new System.Drawing.Point(0, 0);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(250, 33);
+            this.button8.Size = new System.Drawing.Size(250, 39);
             this.button8.TabIndex = 0;
             this.button8.Text = "Tareas Pendientes";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -322,7 +322,7 @@
             // panelPlayer
             // 
             this.panelPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.panelPlayer.Controls.Add(this.label2);
+            this.panelPlayer.Controls.Add(this.lbContador);
             this.panelPlayer.Controls.Add(this.label1);
             this.panelPlayer.Controls.Add(this.lblHora);
             this.panelPlayer.Controls.Add(this.lblFecha);
@@ -332,17 +332,17 @@
             this.panelPlayer.Size = new System.Drawing.Size(684, 130);
             this.panelPlayer.TabIndex = 1;
             // 
-            // label2
+            // lbContador
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(596, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(20, 24);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "0";
+            this.lbContador.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbContador.AutoSize = true;
+            this.lbContador.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbContador.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lbContador.Location = new System.Drawing.Point(596, 50);
+            this.lbContador.Name = "lbContador";
+            this.lbContador.Size = new System.Drawing.Size(20, 24);
+            this.lbContador.TabIndex = 3;
+            this.lbContador.Text = "0";
             // 
             // label1
             // 
@@ -383,7 +383,7 @@
             this.TimerFechaHora.Enabled = true;
             this.TimerFechaHora.Tick += new System.EventHandler(this.TimerFechaHora_Tick);
             // 
-            // Form1
+            // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -396,7 +396,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(950, 600);
-            this.Name = "Form1";
+            this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
             this.panelSideMenu.ResumeLayout(false);
@@ -435,7 +435,7 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbContador;
     }
 }
 

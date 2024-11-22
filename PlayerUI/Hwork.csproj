@@ -49,43 +49,53 @@
   <ItemGroup>
     <Compile Include="Clases\eltTareas.cs" />
     <Compile Include="Clases\TareaArchivo.cs" />
-    <Compile Include="Formularios\Form1.cs">
+    <Compile Include="Formularios\EliminarTarea.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form1.designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Formularios\EliminarTarea.Designer.cs">
+      <DependentUpon>EliminarTarea.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form2.cs">
+    <Compile Include="Formularios\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form2.designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Formularios\MenuPrincipal.designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form3.cs">
+    <Compile Include="Formularios\CrearTarea.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form3.designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Formularios\CrearTarea.designer.cs">
+      <DependentUpon>CrearTarea.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form4.cs">
+    <Compile Include="Formularios\EditarTarea.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Formularios\EditarTarea.designer.cs">
+      <DependentUpon>EditarTarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VisualizarTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\.Designer.cs">
+      <DependentUpon>VisualizarTarea.cs</DependentUpon>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\EliminarTarea.resx">
+      <DependentUpon>EliminarTarea.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\CrearTarea.resx">
+      <DependentUpon>CrearTarea.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\EditarTarea.resx">
+      <DependentUpon>EditarTarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VisualizarTarea.resx">
+      <DependentUpon>VisualizarTarea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

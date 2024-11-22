@@ -142,13 +142,71 @@ namespace PlayerUI.Clases
                 // Asignar la tarea modificada nuevamente a la lista
                 tareas[indice] = tareaModificada;
 
-                MessageBox.Show("La tarea a editada exitosamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("La tarea ha sido editada exitosamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 MessageBox.Show("No se encontró la tarea con el título especificado.","",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
+        public void EliminarTarea(string rutaArchivo, string tituloTarea)
+        {
+            // Paso 1: Leer las tareas desde el archivo
+            List<eltTareas> tareas = LeerArchivoDat(rutaArchivo);
+
+            // Paso 2: Buscar la tarea a eliminar
+            int indice = tareas.FindIndex(t => t.TituloTarea == tituloTarea);
+            eltTareas tareaAEliminar = tareas.FirstOrDefault(t => t.TituloTarea == tituloTarea);
+
+            if (indice != -1)
+            {
+                // Paso 3: Eliminar la tarea de la lista
+                tareas.Remove(tareaAEliminar);
+
+                // Paso 4: Guardar la lista actualizada en el archivo
+                GuardarArchivo(tareas, rutaArchivo);
+
+                MessageBox.Show("La tarea fue eliminada exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se encontró la tarea con el título especificado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public int ContarTareasEnArchivo(string rutaArchivo)
+        {
+            int contador = 0;
+
+            if (File.Exists(rutaArchivo))
+            {
+                using (FileStream archivo = new FileStream(rutaArchivo, FileMode.Open, FileAccess.Read))
+                using (BinaryReader lector = new BinaryReader(archivo))
+                {
+                    while (archivo.Position < archivo.Length)
+                    {
+                        // Leer título de la tarea
+                        int tamañoTitulo = lector.ReadInt32();
+                        lector.ReadChars(tamañoTitulo);
+
+                        // Leer descripción
+                        lector.ReadString();
+
+                        // Leer fecha
+                        lector.ReadString();
+
+                        // Leer prioridad
+                        lector.ReadString();
+
+                        // Incrementar el contador
+                        contador++;
+                    }
+                }
+            }
+
+            return contador;
+        }
+
     }
 }

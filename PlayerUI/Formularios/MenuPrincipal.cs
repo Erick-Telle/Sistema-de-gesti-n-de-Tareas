@@ -1,4 +1,5 @@
-﻿using PlayerUI.Formularios;
+﻿using PlayerUI.Clases;
+using PlayerUI.Formularios;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,19 +7,30 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PlayerUI
 {
-    public partial class Form1 : Form
+    public partial class MenuPrincipal : Form
     {
-        public Form1()
+        public MenuPrincipal()
         {
             InitializeComponent();
             hideSubMenu();
+            ActulizarPendiente();
         }
 
+        public void ActulizarPendiente()
+        {
+            string rutaArchivo = @"C:\Users\User\Documents\Tareas.dat";
+            TareaArchivo tareaArchivo = new TareaArchivo();
+            int cantidadTareas = tareaArchivo.ContarTareasEnArchivo(rutaArchivo);
+            lbContador.Text = $"{cantidadTareas}";
+
+
+        }
         private void hideSubMenu()
         {
             panelSubMenu.Visible = false;
@@ -39,23 +51,28 @@ namespace PlayerUI
         private void btnMedia_Click(object sender, EventArgs e)
         {
             showSubMenu(panelSubMenu);
+            ActulizarPendiente();
         }
 
         #region MediaSubMenu
         private void button2_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form2());
+            openChildForm(new CrearTarea());
+            ActulizarPendiente();
             hideSubMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form3());
+            openChildForm(new EditarTarea());
+            ActulizarPendiente();
             hideSubMenu();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            openChildForm(new EliminarTarea());
+            ActulizarPendiente();
             hideSubMenu();
         }
 
@@ -68,12 +85,14 @@ namespace PlayerUI
         private void btnPlaylist_Click(object sender, EventArgs e)
         {
             showSubMenu(panelVisualizarSubMenu);
+            ActulizarPendiente();
         }
 
         #region panelTareasPendientesSubMenu
         private void button8_Click(object sender, EventArgs e)
         {
             openChildForm(new Form4());
+            ActulizarPendiente();
             hideSubMenu();
         }
 

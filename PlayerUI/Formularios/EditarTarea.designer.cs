@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI
 {
-    partial class Form3
+    partial class EditarTarea
     {
         /// <summary>
         /// Required designer variable.
@@ -230,7 +230,7 @@
             this.tbTitulo.TabIndex = 29;
             this.tbTitulo.Tag = "";
             // 
-            // Form3
+            // EditarTarea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -252,7 +252,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form3";
+            this.Name = "EditarTarea";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

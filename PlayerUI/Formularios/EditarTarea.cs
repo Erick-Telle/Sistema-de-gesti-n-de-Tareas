@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace PlayerUI
 {
-    public partial class Form3 : Form
+    public partial class EditarTarea : Form
     {
-        public Form3()
+        public EditarTarea()
         {
             InitializeComponent();
             string rutaArchivo = @"C:\Users\User\Documents\Tareas.dat";

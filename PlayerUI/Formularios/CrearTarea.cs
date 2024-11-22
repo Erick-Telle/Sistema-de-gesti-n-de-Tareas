@@ -13,12 +13,12 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace PlayerUI
 {
-    public partial class Form2 : Form
+    public partial class CrearTarea : Form
     {
         private List<eltTareas> tareas;
         
 
-        public Form2()
+        public CrearTarea()
         {
             InitializeComponent();
             tareas = new List<eltTareas>();

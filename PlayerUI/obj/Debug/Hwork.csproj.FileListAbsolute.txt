@@ -2,12 +2,13 @@ C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de 
 C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\bin\Debug\PlayerUI.exe
 C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\bin\Debug\PlayerUI.pdb
 C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\Hwork.csproj.AssemblyReference.cache
-C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.Form1.resources
-C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.Form2.resources
-C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.Form3.resources
 C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.Properties.Resources.resources
 C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\Hwork.csproj.GenerateResource.cache
 C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\Hwork.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.exe
 C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.pdb
 C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.Formularios.Form4.resources
+C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.MenuPrincipal.resources
+C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.CrearTarea.resources
+C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.EditarTarea.resources
+C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.Formularios.EliminarTarea.resources
