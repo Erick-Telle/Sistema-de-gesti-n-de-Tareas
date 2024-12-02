@@ -22,6 +22,7 @@ namespace PlayerUI.Clases
                         escritor.Write(c.TituloTarea.Length);
                         escritor.Write(c.TituloTarea.ToCharArray());
                         escritor.Write(c.Descripcion);
+                        escritor.Write(c.HoraEntrega.ToString("h:mm tt"));
                         escritor.Write(c.FechaEntrega.ToString("yyyy-MM-dd"));
                         escritor.Write(c.Prioridad);
                     }
@@ -40,6 +41,7 @@ namespace PlayerUI.Clases
                         escritor.Write(c.TituloTarea.Length);
                         escritor.Write(c.TituloTarea.ToCharArray());
                         escritor.Write(c.Descripcion);
+                        escritor.Write(c.HoraEntrega.ToString());
                         escritor.Write(c.FechaEntrega.ToString("yyyy-MM-dd"));
                         escritor.Write(c.Prioridad);
                     }
@@ -65,7 +67,10 @@ namespace PlayerUI.Clases
                             string titulo = new string(tituloArray);
 
                             string descripcion = lector.ReadString();
-
+                            string horaEntrega = lector.ReadString();
+                            
+                            DateTime horaEntregaa = DateTime.ParseExact(horaEntrega, "h:mm tt", System.Globalization.CultureInfo.InvariantCulture);
+                            
                             // Leer la fecha (como string en formato "yyyy-MM-dd")
                             string fechaString = lector.ReadString();
                             DateTime fechaEntrega = DateTime.ParseExact(fechaString, "yyyy-MM-dd", null);
@@ -77,6 +82,7 @@ namespace PlayerUI.Clases
                             {
                                 TituloTarea = titulo,
                                 Descripcion = descripcion,
+                                HoraEntrega = horaEntregaa,
                                 FechaEntrega = fechaEntrega,
                                 Prioridad = prioridad
                             };
@@ -87,9 +93,8 @@ namespace PlayerUI.Clases
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error al leer el archivo: " + ex.Message);
+                MessageBox.Show("Error al leer el archivo:/ " + ex.Message);
             }
-
             return tareas;
         }
 
@@ -107,36 +112,7 @@ namespace PlayerUI.Clases
                 eltTareas tareaModificada = tareas[indice];
                 tareaModificada.TituloTarea = NuevoTitulo;
                 tareaModificada.Descripcion = nuevaDescripcion;
-                tareaModificada.FechaEntrega = nuevaFechaEntrega;
-                tareaModificada.Prioridad = nuevaPrioridad;
-
-                // Asignar la tarea modificada nuevamente a la lista
-                tareas[indice] = tareaModificada;
-
-                MessageBox.Show("La tarea a editada exitosamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("No se encontró la tarea con el título especificado.","",MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            // Paso 3: Guardar las tareas modificadas nuevamente en el archivo
-            GuardarArchivoEdit(tareas, rutaArchivo);
-        }
-
-        public void SeleccionarTarea(string rutaArchivo, string tituloTarea, string nuevaDescripcion, DateTime nuevaFechaEntrega, string nuevaPrioridad)
-        {
-            List<eltTareas> tareas = LeerArchivoDat(rutaArchivo);
-
-            // Paso 2: Buscar la tarea deseada
-            // Se Usa LINQ y asignación condicional
-            int indice = tareas.FindIndex(t => t.TituloTarea == tituloTarea);
-
-            if (indice != -1)
-            {
-                // Modificar el elemento directamente en la lista
-                eltTareas tareaModificada = tareas[indice];
-                tareaModificada.Descripcion = nuevaDescripcion;
+                
                 tareaModificada.FechaEntrega = nuevaFechaEntrega;
                 tareaModificada.Prioridad = nuevaPrioridad;
 
@@ -149,6 +125,9 @@ namespace PlayerUI.Clases
             {
                 MessageBox.Show("No se encontró la tarea con el título especificado.","",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            // Paso 3: Guardar las tareas modificadas nuevamente en el archivo
+            GuardarArchivoEdit(tareas, rutaArchivo);
         }
 
         public void EliminarTarea(string rutaArchivo, string tituloTarea)
@@ -192,6 +171,8 @@ namespace PlayerUI.Clases
                         lector.ReadChars(tamañoTitulo);
 
                         // Leer descripción
+                        lector.ReadString();
+
                         lector.ReadString();
 
                         // Leer fecha

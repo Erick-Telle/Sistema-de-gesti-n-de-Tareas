@@ -42,37 +42,39 @@ namespace PlayerUI
                 tarea.TituloTarea = tbTitulo.Text;
                 tarea.Descripcion = tbDescripcion.Text;
                 tarea.Prioridad = LbPrioridad.Text;
-                tarea.FechaEntrega = dtpFecha.Value;
-                tareas.Add(tarea);
+                tarea.HoraEntrega = dtpHora.Value;
 
-                try
+                if( dtpFecha.Value < DateTime.Now && dtpHora.Value < DateTime.Now)
                 {
-                    // Ruta de guardado predeterminada los documentos del usuario
-                    string rutaArchivo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Tareas.dat");
-
-                    // Instancia de la clase para guardar
-                    TareaArchivo archivo = new TareaArchivo();
-
-                    // Guardar el archivo en la ubicación predeterminada
-                    archivo.GuardarArchivo(tareas, rutaArchivo);
-
-                    if (string.IsNullOrWhiteSpace(tbTitulo.Text) || string.IsNullOrWhiteSpace(tbDescripcion.Text) || string.IsNullOrWhiteSpace(LbPrioridad.Text))
-                    { }
-                    else
-                    {
-                        // Confirmación de guardado exitoso
-                        MessageBox.Show("La tarea ha sido creada exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    tbTitulo.Clear();
-                    tbDescripcion.Clear();
-                    LbPrioridad.Items.Clear();
-                    tbTitulo.Focus();
-
+                    MessageBox.Show("No puedes crear una Tarea con fecha anterior a la de hoy", "", MessageBoxButtons.OK, MessageBoxIcon.Error);                    
                 }
-                catch (Exception ex)
+                else
                 {
-                    // Mostrar mensaje de error en caso de excepción
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tarea.FechaEntrega = dtpFecha.Value;
+                    tareas.Add(tarea);
+
+                    try
+                    {
+                        // Ruta de guardado predeterminada los documentos del usuario
+                        string rutaArchivo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Tareas.dat");
+
+                        // Instancia de la clase para guardar
+                        TareaArchivo archivo = new TareaArchivo();
+
+                        // Guardar el archivo en la ubicación predeterminada
+                        archivo.GuardarArchivo(tareas, rutaArchivo);
+
+                        MessageBox.Show("La tarea ha sido creada exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        tbTitulo.Clear();
+                        tbDescripcion.Clear();
+                        tbTitulo.Focus();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Mostrar mensaje de error en caso de excepción
+                        MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }

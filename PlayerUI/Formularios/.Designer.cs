@@ -58,6 +58,7 @@
             this.dgvTareas.Name = "dgvTareas";
             this.dgvTareas.Size = new System.Drawing.Size(564, 260);
             this.dgvTareas.TabIndex = 3;
+            this.dgvTareas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTareas_CellClick);
             // 
             // button5
             // 
