@@ -42,7 +42,7 @@ namespace PlayerUI
                 tarea.TituloTarea = tbTitulo.Text;
                 tarea.Descripcion = tbDescripcion.Text;
                 tarea.Prioridad = LbPrioridad.Text;
-                tarea.HoraEntrega = dtpHora.Value;
+                tarea.HoraEntrega = dtpHora.Value.ToString("h:mm tt");
 
                 if( dtpFecha.Value < DateTime.Now && dtpHora.Value < DateTime.Now)
                 {

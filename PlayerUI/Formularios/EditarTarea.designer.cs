@@ -44,6 +44,8 @@
             this.comboBoxTarea = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dtpHora = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,7 +96,7 @@
             // 
             this.dtpFecha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpFecha.Location = new System.Drawing.Point(143, 87);
+            this.dtpFecha.Location = new System.Drawing.Point(143, 111);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(252, 20);
             this.dtpFecha.TabIndex = 25;
@@ -105,7 +107,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label5.Location = new System.Drawing.Point(22, 117);
+            this.label5.Location = new System.Drawing.Point(22, 141);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 19);
             this.label5.TabIndex = 24;
@@ -119,7 +121,7 @@
             "Alta",
             "Media",
             "Baja"});
-            this.LbPrioridad.Location = new System.Drawing.Point(143, 117);
+            this.LbPrioridad.Location = new System.Drawing.Point(143, 141);
             this.LbPrioridad.Name = "LbPrioridad";
             this.LbPrioridad.Size = new System.Drawing.Size(77, 21);
             this.LbPrioridad.TabIndex = 23;
@@ -221,12 +223,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.dtpHora);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.LbPrioridad);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.tbTitulo);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.dtpFecha);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.tbDescripcion);
             this.panel1.Location = new System.Drawing.Point(40, 95);
@@ -240,11 +244,31 @@
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
             this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(22, 87);
+            this.label3.Location = new System.Drawing.Point(22, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(126, 19);
             this.label3.TabIndex = 20;
             this.label3.Text = "Fecha de entrega:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.label8.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label8.Location = new System.Drawing.Point(22, 80);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(121, 19);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Hora de entrega:";
+            // 
+            // dtpHora
+            // 
+            this.dtpHora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHora.Location = new System.Drawing.Point(146, 81);
+            this.dtpHora.Name = "dtpHora";
+            this.dtpHora.Size = new System.Drawing.Size(200, 20);
+            this.dtpHora.TabIndex = 32;
             // 
             // EditarTarea
             // 
@@ -288,5 +312,7 @@
         private System.Windows.Forms.ComboBox comboBoxTarea;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker dtpHora;
     }
 }

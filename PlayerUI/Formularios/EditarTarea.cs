@@ -27,6 +27,7 @@ namespace PlayerUI
             string Titulo = comboBoxTarea.Text;
             string NuevoTitulo = tbTitulo.Text;
             string NuevaDescripcion = tbDescripcion.Text;
+            string NuevaHora = dtpHora.Text;
             DateTime NuevaFecha = DateTime.Parse(dtpFecha.Text);
             string NuevaPrioridad = LbPrioridad.Text;
 

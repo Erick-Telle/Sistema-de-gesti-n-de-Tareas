@@ -22,7 +22,7 @@ namespace PlayerUI.Clases
                         escritor.Write(c.TituloTarea.Length);
                         escritor.Write(c.TituloTarea.ToCharArray());
                         escritor.Write(c.Descripcion);
-                        escritor.Write(c.HoraEntrega.ToString("h:mm tt"));
+                        escritor.Write(c.HoraEntrega);
                         escritor.Write(c.FechaEntrega.ToString("yyyy-MM-dd"));
                         escritor.Write(c.Prioridad);
                     }
@@ -69,7 +69,7 @@ namespace PlayerUI.Clases
                             string descripcion = lector.ReadString();
                             string horaEntrega = lector.ReadString();
                             
-                            DateTime horaEntregaa = DateTime.ParseExact(horaEntrega, "h:mm tt", System.Globalization.CultureInfo.InvariantCulture);
+                            
                             
                             // Leer la fecha (como string en formato "yyyy-MM-dd")
                             string fechaString = lector.ReadString();
@@ -82,7 +82,7 @@ namespace PlayerUI.Clases
                             {
                                 TituloTarea = titulo,
                                 Descripcion = descripcion,
-                                HoraEntrega = horaEntregaa,
+                                HoraEntrega = horaEntrega,
                                 FechaEntrega = fechaEntrega,
                                 Prioridad = prioridad
                             };
