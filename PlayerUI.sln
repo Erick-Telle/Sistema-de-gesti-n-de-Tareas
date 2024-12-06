@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hwork", "PlayerUI\Hwork.csproj", "{B265B459-B4B6-44BC-BDB1-B401C58DC48F}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HworkIntaller", "HworkIntaller\HworkIntaller.vdproj", "{508E7226-7326-40A9-8E96-74C12423099F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +17,13 @@ Global
 		{B265B459-B4B6-44BC-BDB1-B401C58DC48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B265B459-B4B6-44BC-BDB1-B401C58DC48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B265B459-B4B6-44BC-BDB1-B401C58DC48F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{508E7226-7326-40A9-8E96-74C12423099F}.Debug|Any CPU.ActiveCfg = Debug
+		{508E7226-7326-40A9-8E96-74C12423099F}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72BFD24F-1FAE-40FA-BA8B-13839BCDED6C}
 	EndGlobalSection
 EndGlobal
