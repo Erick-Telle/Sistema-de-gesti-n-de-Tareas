@@ -1,4 +1,5 @@
 ﻿using PlayerUI.Clases;
+using PlayerUI.FormulatiosAyuda;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -78,6 +79,12 @@ namespace PlayerUI
                 dtpFecha.Value = tarea.FechaEntrega;
                 LbPrioridad.Text = tarea.Prioridad;
             }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            EditarAyuda editarAyuda = new EditarAyuda();
+            editarAyuda.Show();
         }
     }
 }

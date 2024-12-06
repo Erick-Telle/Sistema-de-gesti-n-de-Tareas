@@ -44,9 +44,11 @@ namespace PlayerUI.Formularios
             {
                 tbTitulo.Text = tarea.TituloTarea;
                 tbDescripcion.Text = tarea.Descripcion;
+               
                 dtpFecha.Value = tarea.FechaEntrega;
                 tbPrioridad.Text = tarea.Prioridad;
             }
+
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

@@ -12,3 +12,7 @@ C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de 
 C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.CrearTarea.resources
 C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.EditarTarea.resources
 C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.Formularios.EliminarTarea.resources
+C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.Formularios.EstadoTarea.resources
+C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.FormulatiosAyuda.CrearAyuda.resources
+C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.FormulatiosAyuda.EditarAyuda.resources
+C:\Users\User\Documents\Metodologia de la programacion estructurada\2Sistema de gestion de Tareas\Sistema de gestion tareas\PlayerUI\obj\Debug\PlayerUI.Formularios.Ayuda.resources

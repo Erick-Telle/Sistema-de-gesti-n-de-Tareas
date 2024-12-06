@@ -153,6 +153,7 @@ namespace PlayerUI
         private void btnHelp_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new Ayuda());
         }
         private void btnExit_Click(object sender, EventArgs e)
         {

@@ -1,4 +1,5 @@
 ﻿using PlayerUI.Clases;
+using PlayerUI.FormulatiosAyuda;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,7 +51,8 @@ namespace PlayerUI
                 }
                 else
                 {
-                    tarea.FechaEntrega = dtpFecha.Value;
+                    string fechass = dtpFecha.Value.ToString("dd/MM/yyyy");
+                    tarea.FechaEntrega = DateTime.Parse(fechass);
                     tareas.Add(tarea);
 
                     try
@@ -82,6 +84,12 @@ namespace PlayerUI
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CrearAyuda crearTarea = new CrearAyuda();
+            crearTarea.Show();
         }
     }
 }

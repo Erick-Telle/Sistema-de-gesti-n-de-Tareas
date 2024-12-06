@@ -33,7 +33,6 @@
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
-            this.btnHistorial = new System.Windows.Forms.Button();
             this.panelVisualizarSubMenu = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.btnPlaylist = new System.Windows.Forms.Button();
@@ -68,7 +67,6 @@
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panelSideMenu.Controls.Add(this.btnExit);
             this.panelSideMenu.Controls.Add(this.btnHelp);
-            this.panelSideMenu.Controls.Add(this.btnHistorial);
             this.panelSideMenu.Controls.Add(this.panelVisualizarSubMenu);
             this.panelSideMenu.Controls.Add(this.btnPlaylist);
             this.panelSideMenu.Controls.Add(this.panelSubMenu);
@@ -111,37 +109,16 @@
             this.btnHelp.ForeColor = System.Drawing.Color.Silver;
             this.btnHelp.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.Image")));
             this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.Location = new System.Drawing.Point(0, 386);
+            this.btnHelp.Location = new System.Drawing.Point(0, 341);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnHelp.Size = new System.Drawing.Size(250, 45);
             this.btnHelp.TabIndex = 8;
-            this.btnHelp.Text = "  Help";
+            this.btnHelp.Text = "  Ayuda";
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
-            // 
-            // btnHistorial
-            // 
-            this.btnHistorial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHistorial.FlatAppearance.BorderSize = 0;
-            this.btnHistorial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(21)))), ((int)(((byte)(32)))));
-            this.btnHistorial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.btnHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistorial.ForeColor = System.Drawing.Color.Silver;
-            this.btnHistorial.Image = ((System.Drawing.Image)(resources.GetObject("btnHistorial.Image")));
-            this.btnHistorial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistorial.Location = new System.Drawing.Point(0, 341);
-            this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnHistorial.Size = new System.Drawing.Size(250, 45);
-            this.btnHistorial.TabIndex = 5;
-            this.btnHistorial.Text = "  Historial";
-            this.btnHistorial.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistorial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHistorial.UseVisualStyleBackColor = true;
-            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
             // panelVisualizarSubMenu
             // 
@@ -421,7 +398,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnMedia;
         private System.Windows.Forms.Button btnHelp;
-        private System.Windows.Forms.Button btnHistorial;
         private System.Windows.Forms.Panel panelVisualizarSubMenu;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button btnPlaylist;
